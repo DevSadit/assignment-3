@@ -9,6 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 
+
+    <!-- mdn-->
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" />
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
+
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/c87e9a0451.js" crossorigin="anonymous"></script>
 
@@ -113,12 +119,10 @@
             </div>
 
         </div>
-        <hr class="border-dashed text-[#0d0d12] mt-24">
+        <hr class="border-dashed text-[#0d0d12] lg:mt-24 mt-10">
 
     </header>
     <main class="container mx-auto">
-
-
         <!-- hockey club -->
         <section class="mt-8">
 
@@ -131,20 +135,21 @@
             <div class="flex text-center lg:flex-row flex-col gap-6 lg:gap-8">
                 <!-- 87% -->
                 <div class="flex-1 lg:px-0 px-14">
-                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar"><span
+                            class="text-black text-2xl font-extrabold">87%</span></div>
                     <h4 class="font-semibold text-xl my-5">Prayer Facility </h4>
                     <p class="text-[#13131899]">Experience tranquility in our well-appointed prayer facility, </p>
                 </div>
                 <!-- 95% -->
                 <div class="flex-1 lg:px-0 px-14">
-                    <div class="radial-progress text-green-400" style="--value:80;" role="progressbar">95%</div>
+                    <div class="radial-progress text-green-400" style="--value:80;" role="progressbar"><span class="text-black text-2xl font-extrabold">95%</span></div>
                     <h4 class="font-semibold text-xl my-5">Experienced Coach </h4>
                     <p class="text-[#13131899]">Unlock your potential with our expert coach guiding you to success.
                     </p>
                 </div>
                 <!-- 90% -->
                 <div class="flex-1 lg:px-0 px-14">
-                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><span class="text-black text-2xl font-extrabold">90%</span></div>
                     <h4 class="font-semibold text-xl my-5">Senior Player</h4>
                     <p class="text-[#13131899]">Meet our seasoned senior player, blending skill, leadership, and
                         experience.
@@ -152,7 +157,7 @@
                 </div>
                 <!-- 80% -->
                 <div class="flex-1 lg:px-0 px-14">
-                    <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
+                    <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar"><span class="text-black text-2xl font-extrabold">80%</span></div>
                     <h4 class="font-semibold text-xl my-5">Training Ground</h4>
                     <p class="text-[#13131899]">Start optimal performance with our state-of-the-art training ground.
 
@@ -162,9 +167,7 @@
 
 
         </section>
-        <hr class="lg:mt-24 border-dashed text-[#0d0d12]">
-
-
+        <hr class="lg:mt-24 mt-10 border-dashed text-[#0d0d12]">
         <!-- Programe section -->
         <section class="mt-8">
             <h2 class="lg:text-4xl text-xl font-extrabold text-center">Program Sections</h2>
@@ -226,8 +229,7 @@
             </div>
 
         </section>
-        <hr class="lg:mt-24 border-dashed text-[#0d0d12]">
-
+        <hr class="lg:mt-24 mt-10 border-dashed text-[#0d0d12]">
         <!-- New Products -->
         <section class="mt-8">
             <h2 class="lg:text-4xl text-xl font-extrabold text-center">Our New Products</h2>
@@ -463,10 +465,8 @@
                 </div>
             </div>
         </section>
-        <hr class="lg:mt-24 border-dashed text-[#0d0d12]">
-
-
-        <!-- Clients Question section -->
+        <hr class="lg:mt-24 mt-10 border-dashed text-[#0d0d12]">
+        <!-- Clients Question section 1-->
         <section class="mt-8">
             <h2 class="lg:text-4xl text-xl font-extrabold text-center">Clients Question</h2>
             <p class="text-[#0d0d1263] text-center mx-auto m-6 lg:w-1/2">Explore innovation and style with our latest
@@ -474,11 +474,90 @@
             </p>
             <hr class="border-dashed text-[#0d0d12] mb-12">
 
-            <!-- acordian -->
+
+            <div class="flex flex-col lg:flex-row gap-10 border border-[#1313181A] p-8 rounded-lg lg:mx-0 mx-5">
+                <div class="lg:w-[700px]"> <!--c1-->
+                    <img src="Images/11.png" class="h-full" alt="">
+                </div>
+                <div class=""> <!--c2-->
+                    <!-- acordian -->
+                    <div class="collapse collapse-plus  border-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Explore innovation with our cutting-edge equipment, meticulously curated for efficiency
+                                and excellence. From advanced technology to reliable tools, we ensure precision and
+                                performance in every aspect. Elevate your standards with us.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  border-none">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Elevate your game with our comprehensive hockey training programs. From skill development
+                                to strategic gameplay, our expert coaching ensures you reach your full potential on the
+                                ice. Train smart, play harder!</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-none">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Elevate your skills with personalized attention. Our private lessons offer tailored
+                                guidance, fostering rapid progress. Experience customized learning with expert
+                                instructors, unlocking your full potential in a focused and private setting.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  border-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Ski Touring
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Ski touring, an exhilarating adventure blending skiing and mountaineering. Traverse
+                                breathtaking landscapes, ascend snow-covered peaks, and experience the thrill of
+                                uncharted snow. Embrace the freedom of backcountry exploration.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Seamless booking experience awaits! Elevate your journey with our user-friendly booking
+                                platform. Secure your spot effortlessly. Unlock convenience and embark on unforgettable
+                                experiences. Book with confidence, travel with joy!"</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  border-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Pricings
+                        </div>
+                        <hr>
+                        <div class="collapse-content">
+                            <p>Explore our transparent and flexible pricing options tailored to suit your needs. Unlock
+                                value with budget-friendly plans. No hidden costs. Choose affordability and reliability
+                                with our diverse pricing structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <hr class="lg:mt-24 border-dashed text-[#0d0d12]">
-
-
         <!-- Get in touch -->
         <section class="mt-8">
             <h2 class="lg:text-4xl text-xl font-extrabold text-center">Get In Touch</h2>
@@ -562,52 +641,28 @@
 
                 </div>
             </div>
-            <!-- social media -->
-            
+
+
 
         </section>
-
-
+        <!-- social media -->
         <section class="container mx-auto lg:p-0 px-5">
-            <div class="bg-[#13131808] rounded-lg p-8 mb-24">
+            <div class="bg-[#13131808] rounded-lg p-8 lg:mb-24 mb-10">
                 <div class=" space-y-6">
                     <h4 class="text-black font-extrabold text-center">SOCIAL MEDIA</h4>
                     <div class="flex justify-center items-center gap-5">
-                       <a class="cursor-pointer"><i class="fa-brands fa-twitter"></i></a>
-                       <a class="cursor-pointer"><i class="fa-brands fa-facebook"></i></a>
-                       <a class="cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
-                       <a class="cursor-pointer"><i class="fa-brands fa-github"></i></a>
+                        <a class="cursor-pointer"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="cursor-pointer"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="cursor-pointer"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- footer section -->
+    
     <footer class="lg:p24 p-10 bg-[#131318] mx-auto ">
         <div class=" space-y-4 md:space-y-0 grid grid-cols-1 md:grid-cols-4">
             <!--nav-1-->
@@ -652,9 +707,5 @@
             </nav>
         </div>
     </footer>
-
-
 </body>
-<!-- progress bar tar modde leka gola onno kalarer korar jonno h2 k span tag er vitor felte hbe r span e cls set korte hbe -->
-
 </html>
